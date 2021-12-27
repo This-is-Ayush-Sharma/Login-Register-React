@@ -21,7 +21,7 @@ export default function Register() {
     }
     const run = async () => {
 
-        await axios.post('http://localhost:5000/api/register',{
+        await axios.post('https://authbackend.onrender.com/api/register',{
             name:name,
             email:email,
             password:password
@@ -39,7 +39,7 @@ export default function Register() {
         })
     }
     const responseLogin = async (res) => {
-        await axios.post('http://localhost:5000/api/googleRegister',{
+        await axios.post('https://authbackend.onrender.com/api/googleRegister',{
             tokenId:res.tokenId
         })
         .then(response =>{
