@@ -38,7 +38,7 @@ export default function Login() {
         })
     }
     const responseLogin = async(res) => {
-        await axios.post('https://authbackend.onrender.com/googleLogin',{
+        await axios.post('https://authbackend.onrender.com/api/googleLogin',{
             tokenId:res.tokenId
         })
         .then(response =>{
