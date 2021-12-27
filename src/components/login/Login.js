@@ -83,7 +83,7 @@ export default function Login() {
                         <h3>log in via</h3>
                         <div className="social-icons">
                             <GoogleLogin
-                                clientId="905154661025-67tlgshoj5of6fcsnmeq9tvv85svpph6.apps.googleusercontent.com"
+                                clientId="905154661025-11n1te9q1s70ohnnsqgcavpjhjcbatkc.apps.googleusercontent.com"
                                 buttonText="Google"
                                 onSuccess={responseLogin}
                                 onFailure={responseFailed}
