@@ -20,7 +20,7 @@ export default function Login() {
         setpassword(e.target.value);
     }
     const run = async () => {
-        await axios.post('http://localhost:5000/api/login',{
+        await axios.post('https://authbackend.onrender.com/api/login',{
             email:email,
             password:password
         })
@@ -38,7 +38,7 @@ export default function Login() {
         })
     }
     const responseLogin = async(res) => {
-        await axios.post('http://localhost:5000/api//googleLogin',{
+        await axios.post('https://authbackend.onrender.com/googleLogin',{
             tokenId:res.tokenId
         })
         .then(response =>{
